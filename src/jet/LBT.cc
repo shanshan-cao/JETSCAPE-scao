@@ -826,6 +826,8 @@ void LBT::LBT0(int &n, double &ti){
 	PLen=sqrt(pc0[1]*pc0[1]+pc0[2]*pc0[2]+pc0[3]*pc0[3]);
 	transback(vc0,pc0);
 
+        if(PLen<2.0) PLen=2.0;
+
 	T=temp0;
 	KATTC0=KATT1[i];
 

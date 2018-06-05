@@ -545,6 +545,8 @@ void Matter::DoEnergyLoss(double deltaT, double time, double Q2, vector<Parton>&
                       enerLoc=pc0[0];
                       transback(vc0,pc0);
 
+		      if(enerLoc<2.0) enerLoc=2.0;
+
               	      betaLoc = sqrt(vxLoc*vxLoc+vyLoc*vyLoc+vzLoc*vzLoc);
                	      gammaLoc = 1.0/sqrt(1.0-betaLoc*betaLoc);
                	      flowFactor = gammaLoc*(1.0-(initVx*vxLoc+initVy*vyLoc+initVz*vzLoc));
