@@ -888,7 +888,7 @@ void LBT::LBT0(int &n, double &ti){
 	flag_update=1; // satisfy T>Tc and Q<Q0, LBT will process this positice particle
 
 	//if(E<sqrt(qhat0)) continue; // just do free-streaming
-	//if(i>nj && E<Ecmcut) continue;
+	if(i>nj && E<Ecmcut) continue;
 	        
 
 	// update interaction time and average gluon number for heavy quark radiation 

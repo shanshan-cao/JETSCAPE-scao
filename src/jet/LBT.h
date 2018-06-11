@@ -260,7 +260,7 @@ class LBT : public JetEnergyLossModule<LBT> //, public std::enable_shared_from_t
   double tjp[dimParList]={0.0};
   double Vfrozen[4][dimParList]={{0.0}};     //parton final 4 coordinate
   double Vfrozen0[4][dimParList]={{0.0}};    //negative parton final 4 coordinate 
-  double Ecmcut=2.0;                   //energy cut for free streaming   
+  double Ecmcut=0.2;                   //energy cut for free streaming   
   double Tfrozen[dimParList]={0.0};
   double Tfrozen0[dimParList]={0.0};
   double vcfrozen[4][dimParList]={{0.0}};
